@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Data Diri Modern</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Profil</a></li>
+                <li><a href="#">Hobi</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </aside>
+
+        <!-- Konten Utama -->
+        <main class="main-content">
+            <header>
+                <h1>Selamat Datang di Dashboard Data Diri</h1>
+            </header>
+
+            <!-- Form input data diri -->
+            <section class="form-section">
+                <h2>Input Data Diri</h2>
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" placeholder="Masukkan nama">
+
+                <label for="umur">Umur:</label>
+                <input type="number" id="umur" placeholder="Masukkan umur">
+
+                <label for="hobi">Hobi:</label>
+                <input type="text" id="hobi" placeholder="Masukkan hobi">
+
+                <button id="tampilkan">Tampilkan Data</button>
+            </section>
+
+            <!-- Card hasil data -->
+            <section class="cards">
+                <div class="card">
+                    <h3>Nama</h3>
+                    <p id="hasilNama">-</p>
+                </div>
+                <div class="card">
+                    <h3>Umur</h3>
+                    <p id="hasilUmur">-</p>
+                </div>
+                <div class="card">
+                    <h3>Hobi</h3>
+                    <p id="hasilHobi">-</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
